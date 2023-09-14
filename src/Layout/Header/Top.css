@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Cabin+Sketch:wght@400;700&family=Dancing+Script:wght@400;500;600;700&family=Dosis:wght@200;300;400;500;600;700;800&family=Handjet:wght@100;200;300;400;500;600;700;800&family=Manrope:wght@200;300;400;500;600;700;800&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300;400;500;600;700&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+.extra-back {
+  background-color: #6f4a37;
+  width: 35%;
+  font-family: "Poppins", sans-serif;
+
+  padding-left: 90px;
+}
+.extra-white {
+  padding-right: 80px;
+  font-family: "Poppins", sans-serif;
+}
+@media (max-width: 600px) {
+  .case {
+    display: none;
+  }
+  .proimg {
+    width: 25% !important;
+  }
+  .prodiv h1 {
+    font-size: 22px;
+  }
+  .az1 {
+    padding-top: 21px;
+  }
+  .token {
+    font-size: 7px !important;
+    font-weight: bold !important;
+  }
+}
+@media (min-width: 768px) {
+  .extra-back {
+    padding-left: 20px;
+    font-size: 13px !important;
+  }
+  .extra-white {
+    padding-right: 20px;
+  }
+}
+.break {
+  height: 30px;
+  width: 1px;
+  background-color: rgb(128, 127, 126);
+  margin-left: 13px;
+  margin-top: -3px;
+}
+.proimg {
+  width: 11%;
+  background-color: #b9b8b8;
+  border-radius: 50%;
+}
+.prodiv {
+  background-color: #6f4a37;
+  width: 50%;
+  padding: 25px 10px;
+}
+.project {
+  background-image: url("../../Asset/Image/bk.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+}
+.check {
+  display: flex;
+  justify-content: center;
+}
+.imgage img {
+  border-radius: 15px;
+}
+.filter1 {
+  perspective: 20rem;
+  border: none;
+  background-color: transparent;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 10px 30px;
+  box-shadow: 0 5px 15px rgba(190, 76, 190, 0.308);
+  border-radius: 10px !important;
+  outline: none;
+  color: white;
+}
+.filter1::before {
+  content: "";
+  position: absolute;
+  border-radius: 10px;
+  background-color: #1d1917;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transform: rotate(0deg);
+  transition: transform 1.5s;
+}
+
+.filter1:hover::before {
+  transform: rotate(180deg);
+}
+.imgage img {
+  min-height: 247px !important;
+}
